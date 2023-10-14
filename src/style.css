@@ -1,0 +1,55 @@
+body {
+  font-family: "Source Sans Pro", sans-serif;
+  font-size: 20px;
+  padding-top: 10px;
+  margin: 10px;
+  background: #56a5ea;
+}
+
+ol,
+ul {
+  padding-left: 40px;
+}
+
+.board-row {
+  min-width: 210px;
+}
+
+.board-row::after {
+  clear: both;
+  content: "";
+  display: table;
+}
+
+.square {
+  background: #fff;
+  border: 2px solid #262626;
+  float: left;
+  font-size: 35px;
+  font-weight: bold;
+  line-height: 35px;
+  height: 70px;
+  margin-right: -1px;
+  margin-top: -1px;
+  padding: 0;
+  text-align: center;
+  width: 70px;
+}
+
+.square:focus {
+  outline: none;
+}
+
+.game {
+  display: flex;
+  flex-direction: row;
+}
+
+.game-info {
+  margin-left: 20px;
+  min-width: 180px;
+}
+
+.winner {
+  background-color: yellow;
+}
